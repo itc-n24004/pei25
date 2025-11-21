@@ -1,0 +1,17 @@
+def func(a, b):
+    if a ** b <= 64: # aのb乗が64以下の場合
+        return 1 # 1を返す
+    else: # それ以外の場合
+        return 0 # 0を返す
+
+x = func(4, 3) # 4の3乗は64なので1となる
+y = func(3, 4) # 3の4乗は81なので0となる
+u = func(5, 6)
+z = [bool(x), bool(y), bool(u)]
+print(z) # [Ture, False]
+
+# bool関数について
+# bool()は、与えられた値をTure/False に変換する関数
+# 0,none,からの文字列やコレクションなどはFalseとみなされる
+# ほとんどの値はTureと見なされる
+
